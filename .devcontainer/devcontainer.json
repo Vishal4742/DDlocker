@@ -1,0 +1,15 @@
+{  
+  "name": "Web3 Dev Container",  
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18",  
+  "forwardPorts": [3000, 8545],  
+  "customizations": {  
+    "vscode": {  
+      "extensions": [  
+        "dbaeumer.vscode-eslint",  
+        "esbenp.prettier-vscode",  
+        "streetsidesoftware.code-spell-checker"  
+      ]  
+    }  
+  },  
+  "postCreateCommand": "npm install && cd backend && npm install"  
+}  
